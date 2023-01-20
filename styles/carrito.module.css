@@ -1,0 +1,71 @@
+.contenido{
+    display: grid;
+    align-items: flex-start;
+    gap: 10rem;
+}
+@media(min-width: 768px){
+    .contenido{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.resumen {
+    background-color: #f0f0f0;
+    padding: 0 5rem 2rem;
+    border-radius: 12px;
+    position: sticky;
+    top: 3rem;
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 4rem;
+    align-items: center;
+    border-bottom: 1px gray solid;
+    padding: 0 auto 4rem;
+    margin: 0 auto;
+}
+.producto .nombre{
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.producto .precio {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.producto .subtotal span {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 2.2rem;
+}
+.producto .contenedor-imagen{
+    text-align: center;
+}
+.producto .quantity{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.producto .quantity .selector{
+    border: solid 1px gray;
+    border-radius: 7px;
+    padding: 0.7rem 1rem;
+    font-size: 1.7rem;
+    width: 7rem;
+}
+
+.producto .delete-btn{
+    background-color: #d8d8d8;
+    display: flex;
+    padding: .6rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.producto .delete-btn:hover{
+    background-color: #c4c4c4;
+}

@@ -1,0 +1,14 @@
+.curso {
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem 3.5rem;
+    margin: 10rem auto;
+    color: white;
+    border-radius: 20px;
+}
+
+@media(min-width: 768px){
+    .curso {
+        padding: 7rem 10rem;
+    }
+}

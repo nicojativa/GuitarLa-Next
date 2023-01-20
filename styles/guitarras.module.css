@@ -1,0 +1,115 @@
+.listing {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7rem;
+    text-align: center;
+}
+@media(min-width:768px){
+    .listing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width:992px){
+    .listing {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.guitarra {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+
+.guitarra .contenido {
+    text-align: left;
+    padding: 1rem;
+}
+
+.guitarra .nombre{
+    margin-top: 0;
+}
+.guitarra .descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.guitarra .singleDescription{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+.guitarra .precio {
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+.guitarra .enlace{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: #000;
+    padding: 0.7rem 1rem;
+    border-radius: 7px;
+    font-size: 1.7rem;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.guitarra .enlace:hover{
+    background-color: var(--primary);
+}
+
+/*** Single Guitar ***/
+
+.guitarra .precio-label {
+    color: black;
+    font-weight: 700;
+    font-size: 2.1rem;
+    padding-right: 1.2rem;
+}
+
+.agregar-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.agregar-carrito .quantity{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.agregar-carrito .quantity .selector{
+    border: solid 1px gray;
+    border-radius: 7px;
+    padding: 0.7rem 1rem;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.agregar-carrito .add-to-cart-btn{
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    border: none;
+    border-radius: 7px;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.agregar-carrito .add-to-cart-btn:hover{
+    background-color: var(--primary);
+}
